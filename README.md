@@ -8,6 +8,7 @@ While a work in progress, TapArtistry sets out to make live interactive art mani
 ### What is used?
 
 * Angular/JavaScript
+* Node.js
 * Cordova/PhoneGap
 * Firebase
 * Nexus 4
