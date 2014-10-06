@@ -5,7 +5,7 @@ TapArtistry
 
 While a work in progress, TapArtistry sets out to make live interactive art manipulation happen across the web. Fusing NFC, Firebase, and imagination is just the start!
 
-### What is used?
+### What is used? (Call it FEAN stack?)
 
 * Angular/JavaScript
 * Node.js
