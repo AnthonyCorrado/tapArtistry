@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Tap Art</title>
+	<link rel="stylesheet" type="text/css" href="stylesheets/style.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.2.20/angular-animate.js"></script>
+	<script type="text/javascript" src="/javascripts/angularApp.js"></script>
+</head>
+<body ng-app="tapArtApp" ng-controller="StyleCtrl" ng-click="help()" >
+	<div rescale ng-style="{ width: windowWidth + 'px', height: windowHeight + 'px'}" class="container">
+
+		<div class="cloud1" ng-show="cat" rescale ng-style="{ width: (windowWidth / 2.5) + 'px', height: (windowHeight / 4) + 'px'}" ></div>
+		<div class="sun" rescale ng-style="{ width: (windowWidth / 6) + 'px', height: (windowWidth / 6) + 'px'}"></div>
+		<div class="sky"></div>
+		<div class="grass-background"></div>
+		<div class="grass-midground"></div>
+		<div class="grass-foreground"></div>
+		<div class="fx-cover"></div>
+
+
+	</div>
+</body>
+</html>
