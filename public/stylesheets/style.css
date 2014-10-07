@@ -1,5 +1,6 @@
 body {
 	margin: 0 auto;
+/*	overflow: hidden;*/
 }
 .container {
 	background-color: red;
@@ -44,6 +45,7 @@ body {
 .sun {
 	width: 20%;
 	height: 20%;
+	margin-top: 0%;
 	position: absolute;
 	z-index: 10;
 	border-radius: 100%;
@@ -71,35 +73,49 @@ body {
 	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#bce0ee', endColorstr='#b3dced', GradientType=0 );
 }
 .cloud1 {
-	width: 20%;
-	height: 20%;
-	margin-left: 40%;
+	width: 33%;
+	height: 33%;
+	margin-left: 50%;
 	margin-top: 5%;
 	position: absolute;
 	float: left;
 	background: url('../images/cloud1.png') no-repeat;
 	background-size: 100% 100%;
-	z-index: 12;
+	z-index: 9;
+	display: none;
+}
+.cloud2 {
+	width: 20%;
+	height: 20%;
+	margin-left: 20%;
+	margin-top: 15%;
+	position: absolute;
+	float: left;
+	background: url('../images/cloud2.png') no-repeat;
+	background-size: 100% 100%;
+	z-index: 8;
+	display: none;
 }
 .fx-cover {
 	width: 100%;
 	height: 100%;
 	position: absolute;
 	z-index: 100;
-	background-color: rgba(160, 20, 160, 0);
+	background-color: rgba(160, 20, 160, 0.4);
+	display: none;
 }
 
-.cloud1 {
+.cloud1, .cloud2 {
   -webkit-transition:2s linear all;
   transition:2s linear all;
   opacity:1;
 }
 
-.cloud1.ng-hide {
+.cloud1.ng-hide, .cloud2.ng-hide {
   opacity:0;
 }
 
-.cloud1.ng-hide-add, .cloud1.ng-hide-remove {
+.cloud1.ng-hide-add, .cloud1.ng-hide-remove .cloud2.ng-hide-add, .cloud2.ng-hide-remove{
   /* this needs to be here to make it visible during the animation
      since the .ng-hide class is already on the element rendering
      it as hidden. */
